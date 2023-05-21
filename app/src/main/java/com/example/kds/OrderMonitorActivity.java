@@ -82,7 +82,6 @@ public class OrderMonitorActivity extends AppCompatActivity {
                                 tableid.add(snapshot.child("tableid").getValue(String.class));
                             }
                             adapter.notifyDataSetChanged();
-                            Log.e("QWE", "run");
                         }
 
                         @Override
@@ -91,6 +90,7 @@ public class OrderMonitorActivity extends AppCompatActivity {
                         }
                     });
                 }
+                adapter.notifyDataSetChanged();
             }
 
             @Override
